@@ -1,62 +1,86 @@
 .main-container-header {
   position: fixed;
-  width: 100%; 
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 2;
 }
 
 .navbar {
-    padding:  20px  0;
-    background-color: #f8f9fa;
-    transition: background-color  1s, color  1s;
-  }
-  
-  .navbar .navbar-brand {
-    font-weight: bold;
-    font-size:  2rem;
-  }
-  
-  .navbar .nav-link,
-  .navbar .btn{
-    font-size:  1.2rem;
-    color: #333;
-    transition: color  1s;
-  }
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  transition: background-color 1s, color 1s;
+}
 
-  .navbar .nav-link:hover {
-    background-color: #007bff; 
-    border-radius: 8px;
-    color: white;
-  }
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
-  .btn-header-toogle, .btn-header-lnk,
-  .btn-header-github
-  {
-    border: none;
-  }
+.navbar .nav-link,
+.navbar .btn {
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 1s;
+}
 
-  .btn-header-contact {
-    margin-right: 100px;
-  }
-  
-  body[mode-theme='dark'] .navbar {
-    background-color: #333;
-    color:white;
-  }
-  
-  body[mode-theme='dark'] .navbar .nav-link,
-  body[mode-theme='dark'] .navbar .btn {
-    color: #f8f9fa;
-  }
-  
-  body[mode-theme='light'] .navbar {
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  
-  body[mode-theme='light'] .navbar .nav-link,
-  body[mode-theme='light'] .navbar .btn {
-    color: #333;
-  }
-  
+.navbar .nav-link:hover {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: white;
+}
+
+.btn-header-toogle,
+.btn-header-lnk,
+.btn-header-github,
+.btn-header-email
+{
+  border: none;
+}
+
+.btn-header-github:hover {
+  background-color: transparent;
+}
+
+.btn-header-toogle:hover {
+  background-color: transparent;
+}
+
+.btn-header-lnk:hover {
+  background-color: transparent;
+}
+
+.btn-header-email:hover {
+  background-color: transparent;
+}
+
+.btn-header-contact {
+  margin-right: 100px;
+}
+
+.navbar .me-auto .nav-link:hover,
+.navbar .me-auto .btn:hover {
+  background-color: transparent !important;
+}
+
+
+body[mode-theme='dark'] .navbar {
+  background-color: #333;
+  color: white;
+}
+
+body[mode-theme='dark'] .navbar .nav-link,
+body[mode-theme='dark'] .navbar .btn {
+  color: #f8f9fa;
+}
+
+body[mode-theme='light'] .navbar {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+body[mode-theme='light'] .navbar .nav-link,
+body[mode-theme='light'] .navbar .btn {
+  color: #333;
+}
+

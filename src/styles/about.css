@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 
 
 .main-container-about {
@@ -9,6 +10,7 @@
     justify-content: center;
     height: 100vh;    
 }
+
 
 .about-intro {
     margin-top: 80px;
@@ -42,6 +44,26 @@
     font-size: 25px;      
 }
 
+.about-text {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;  
+    margin-top: 80px;
+    font-family: 'Crimson Text';    
+}
+
+.about-cv {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;  
+    margin-top: 20px;   
+}
+
+.bnt-header-download {
+    margin-top: 20px;    
+    justify-content: center;    
+}
+
 [mode-theme='dark'] .main-container-about, .about-fs,
 [mode-theme='light'] .main-container-about, .about-fs {
     transition: background-color  1s, color  1s;    
@@ -60,3 +82,4 @@
 [mode-theme='dark'] .about-fs {
     color: #f8f9fa;
 }
+

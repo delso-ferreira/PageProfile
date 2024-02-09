@@ -26,6 +26,7 @@ function Skills() {
             <strong>
             <li>Node</li>
             <li>Python</li>
+            <li>C#</li>
             <li>Express</li>
             <li>MySQL</li>
             <li>RESTful API</li>

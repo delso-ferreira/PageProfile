@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../styles/about.css';
+import { Button } from 'react-bootstrap';
 
 function About() {
     const [mode, setMode] = useState("light");
@@ -24,6 +25,14 @@ function About() {
                     <p className="about-fs">
                         Desenvolvedor web fullstack.
                     </p>
+                    <p className="about-text">
+                    Dedicado a encontrar soluções inovadoras para problemas complexos
+                    </p>
+                    <div className="about-cv">
+                        <Button className='bnt-header-download'>
+                            Download CV
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

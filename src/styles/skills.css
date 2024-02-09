@@ -16,26 +16,37 @@
 }
 
 .skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {
-  width: 30%; 
+  width: 30%;
   border: 2px solid #333;
   border-radius: 8px;
   padding: 20px;
-  margin: 10px; 
+  margin: 10px;
   max-height: calc(100vh - 40px);
   overflow-y: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  flex-direction: column;  
-  font-family: 'Georama';  
-  font-size: 20px;
+  
   
 }
 
-ul {
-  list-style-type:none;
-  padding: 0%;
-  
+ul.skills-front,
+ul.skills-back,
+ul.skills-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-self: center;
+   
+}
+
+ul.skills-front li,
+ul.skills-back li,
+ul.skills-tools li {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  list-style: none; 
+  margin-right: 20px; 
+  margin-top: 5px;
+  background-color: powderblue;
 }
 
 .skills-quadrant-1 {
@@ -61,9 +72,27 @@ ul {
   transition: background-color 1s, color 1s;
 }
 
+[mode-theme='dark'] ul.skills-front li, ul.skills-back li, ul.skills-tools li,
+[mode-theme='light'] ul.skills-front li, ul.skills-back li, ul.skills-tools li
+{
+  transition: background-color 1s, color 0.4s;
+}
+
 [mode-theme='dark'] .skills-quadrant-1 {
   background-color: grey;
   color: white;
+}
+
+[mode-theme='dark'] ul.skills-front li {
+  background-color: darkblue;
+}
+
+[mode-theme='dark'] ul.skills-back li {
+  background-color: darkblue;
+}
+
+[mode-theme='dark'] ul.skills-tools li {
+  background-color: darkblue;
 }
 
 [mode-theme='dark'] .skills-quadrant-2 {
@@ -90,3 +119,4 @@ ul {
   background-color:honeydew;
   color: black;
 }
+
