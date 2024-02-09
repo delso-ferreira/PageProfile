@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Outfit:wght@100&display=swap');
+
+.container__card {
+    width: 180px;
+    height: 130px;
+    background:  whitesmoke;
+    border: var(--neon-color) 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    transition: transform 0.5s, box-shadow 0.5s, text-shadow 0.5s;
+    text-decoration: none;    
+    position: relative;
+  }
+  
+  .container__card-descr h3 {
+    color:  black;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .container__card-descr p {
+    color:  black;
+    font-size: 13px;
+    font-family: 'Cormorant', sans-serif;
+  }
+  
+  .container__card::before {
+    content: '';
+    position: absolute;
+    background: var(--neon-color);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(0.8em) rotateX(25deg) scale(0.55, 0.25);
+    filter: blur(2em);
+    opacity: 0.7;
+  }
+  
+  .container__card {    
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    border: none;
+    padding: 0.25em;
+    border-radius: 0.22em;
+    text-align: center;
+    text-shadow: 0 0 1.25em hsla(313, 79%, 42%, 0.5), var(--neon-color) 0 0 1.25em;
+    box-shadow: inset 0 0 0.5em 0 var(--neon-color), 0 0 0.5em 0 var(--neon-color);
+    position: relative;
+    transition: opacity 100ms linear;
+    margin: 10px;  
+    transform: scale(1);
+  }
+  
+  .container__card:before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--neon-color);
+    transform: perspective(1em) rotateX(25deg) scale(0.55, 0.25);
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  .container__card:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2em 0.8em var(--neon-color);
+    opacity: 0;
+    transition: opacity 100ms linear;
+  }
+  
+  .container__card:hover,
+  .container__card:focus {
+    opacity: 0.7;
+    transform: scale(1.1);
+    background: var(--neon-color);
+    color: var(--neon-bg);
+    text-shadow: none;
+  }
+  
+  .container__card:hover::before,
+  .container__card:focus::before {
+    opacity: 1;
+  }
+  
+  .container__card:hover::after,
+  .container__card:focus::after {
+    opacity: 1;
+  }
+  

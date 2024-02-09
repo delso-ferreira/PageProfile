@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+
+.main-container-proj
+{
+    height: calc(100vh);
+}
+
+.main-container-proj,
+.card,
+.card-container,
+.full-page-section-proj {    
+    color: #333;
+    position: relative;
+    z-index: 1;
+    background-color: honeydew;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;        
+    z-index: 1;        
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;        
+}
+
+.card p {
+    font-family: 'Georama';
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+
+.card p {
+    margin-top: 5px;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+[mode-theme='dark'] .main-container-proj,
+[mode-theme='dark'] .card,
+[mode-theme='dark'] .card-container,
+[mode-theme='dark'] .full-page-section-proj {
+    background-color: lightslategray;
+    color: black;
+    transition: background-color 1s, color 1s;
+}
+
+[mode-theme='dark'] .card {
+    transition: background-color 1s, color 1s;
+    background-color: grey;
+    color: white;    
+}
+
+[mode-theme='dark'] .card a {
+    color: #66c2ff;
+}
+
+[mode-theme='dark'] .card a:hover {
+    text-decoration: underline;
+}
+
+[mode-theme='light'] .main-container-proj,
+[mode-theme='light'] .card-container,
+[mode-theme='light'] .full-page-section-proj {
+    background-color: honeydew;
+    color: #333;
+    transition: background-color 1s, color 1s;
+}
+
+[mode-theme='light'] .card {
+    background-color: #f8f9fa;
+    transition: background-color 1s, color 1s;
+}

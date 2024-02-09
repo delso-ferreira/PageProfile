@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Projeto 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor mattis libero, in aliquam velit.",
+      "imageUrl": "https://via.placeholder.com/150",
+      "githubUrl": "#"
+    },
+    {
+      "id": 2,
+      "name": "Projeto 2",
+      "description": "Suspendisse nec feugiat urna. Nullam consectetur justo in mi aliquet, a porttitor eros tristique.",
+      "imageUrl": "https://via.placeholder.com/150",
+      "githubUrl": "#"
+    },
+    {
+      "id": 3,
+      "name": "Projeto 3",
+      "description": "Fusce non leo ut purus lacinia ullamcorper. Curabitur bibendum libero at sapien vestibulum, vitae rhoncus lectus gravida.",
+      "imageUrl": "https://via.placeholder.com/150",
+      "githubUrl": "#"
+    }
+  ]
+  

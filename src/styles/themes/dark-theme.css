@@ -1,0 +1,4 @@
+body[mode-theme='dark'] {
+  background-color:darkslategrey;
+  color: black;
+}

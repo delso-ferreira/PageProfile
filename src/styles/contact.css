@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+
+.main-container-contact {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+width: 100vh;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+textarea {
+resize: none;
+height: 200px;
+}
+
+.form-group label,
+input[type="text"],
+input[type="email"],
+textarea,
+button[type="submit"] {
+position: relative;
+z-index: 1;
+}
+
+.full-page-section-contact h2 {
+margin: auto;
+}
+
+[mode-theme='dark'] .main-container-contact {
+background-color: lightslategray;
+}
+
+[mode-theme='dark'] .contact-form{
+background-color: grey;
+color: white;
+}
+
+[mode-theme='dark'] .contact-form,
+[mode-theme='dark'] .main-container-contact {
+transition: background-color 1s, color 1s;
+}
+
+[mode-theme='light'] .main-container-contact {
+background-color: honeydew;
+}
+
+[mode-theme='light'] .contact-form{
+background-color: #f8f9fa;
+color: #333;
+}
+
+[mode-theme='light'] .contact-form,
+[mode-theme='light'] .main-container-contact {
+transition: background-color 1s, color 1s;
+}
+
+
+
+
+
