@@ -64,8 +64,13 @@
     justify-content: center;    
 }
 
-[mode-theme='dark'] .main-container-about, .about-fs,
+[mode-theme='dark'] .main-container-about, .about-fs, 
 [mode-theme='light'] .main-container-about, .about-fs {
+    transition: background-color  1s, color  1s;    
+}
+
+[mode-theme='dark'] .about-text,
+[mode-theme='light'] .about-text {
     transition: background-color  1s, color  1s;    
 }
 
@@ -83,3 +88,6 @@
     color: #f8f9fa;
 }
 
+[mode-theme='dark'] .about-text {
+    color: #f8f9fa;
+}

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import { FaSun, FaMoon, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md"; // Importe o ícone MdEmail corretamente
+import { MdEmail } from "react-icons/md";
 import getId from '../utils/getId';
 import '../styles/header.css';
 
