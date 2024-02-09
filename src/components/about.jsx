@@ -15,23 +15,25 @@ function About() {
             <div className="full-page-section">
                 <div className="about-intro">
                     <div className='about-name-container'>
-                    <p className='about-name-start'>
-                    Olá, eu sou o
-                    </p>
-                     <p className="about-name">
-                         Delso
-                    </p>
+                        <p className='about-name-start'>
+                            Olá, eu sou o
+                        </p>
+                        <p className="about-name">
+                            Delso
+                        </p>
                     </div>
                     <p className="about-fs">
                         Desenvolvedor web fullstack.
                     </p>
                     <p className="about-text">
-                    Dedicado a encontrar soluções inovadoras para problemas complexos
+                        Dedicado a encontrar soluções inovadoras para problemas complexos
                     </p>
                     <div className="about-cv">
-                        <Button className='bnt-header-download'>
-                            Download CV
-                        </Button>
+                        <a href="https://drive.google.com/file/d/1KhqvTws-ANfMz5b1K9S4M6Klt3sWqItF/view?usp=drive_link" download='ResumeOfficial.pdf' target="blank">
+                            <Button className='bnt-header-download'>
+                                Download CV
+                            </Button>
+                        </a>
                     </div>
                 </div>
             </div>
