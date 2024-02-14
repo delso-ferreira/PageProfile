@@ -123,7 +123,7 @@ ul.skills-tools li {
   color: black;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 773px) {
   .skills-quadrant-1,
   .skills-quadrant-2,
   .skills-quadrant-3 {

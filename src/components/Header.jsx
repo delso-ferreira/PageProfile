@@ -29,7 +29,7 @@ function Header() {
   return (
     <div className='main-container-header'>
       <Navbar border="transparent" bg={mode === "light" ? "light" : "dark"} variant={mode === "light" ? "light" : "dark"} expand="lg">
-        <Container>
+        <Container>          
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav className="me-auto">
