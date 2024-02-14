@@ -1,24 +1,24 @@
 [
     {
       "id": 1,
-      "name": "Projeto 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor mattis libero, in aliquam velit.",
+      "name": "Futebol Club",
+      "description": "Aplicação web para gerenciamento de times de futebol, com a capacidade de criar, visualizar, deletar e atualizar partidas e leaderboard.",
       "imageUrl": "https://via.placeholder.com/150",
       "githubUrl": "#"
     },
     {
       "id": 2,
-      "name": "Projeto 2",
-      "description": "Suspendisse nec feugiat urna. Nullam consectetur justo in mi aliquet, a porttitor eros tristique.",
+      "name": "RPG Battle",
+      "description": "Aplicação web para simulação de batalhas de RPG, com a capacidade de criar, visualizar, deletar e atualizar personagens e batalhas.",
       "imageUrl": "https://via.placeholder.com/150",
       "githubUrl": "#"
     },
     {
       "id": 3,
-      "name": "Projeto 3",
-      "description": "Fusce non leo ut purus lacinia ullamcorper. Curabitur bibendum libero at sapien vestibulum, vitae rhoncus lectus gravida.",
+      "name": "Product Manager",
+      "description": "Aplicação web para o gerenciamento de vendas, com a capacidade de criar, visualizar, deletar e atualizar produtos e vendas",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "#"
+      "githubUrl": "https://github.com/delso-ferreira/product-manager"
     }
   ]
   

@@ -1,84 +1,98 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/contact.css';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [alert, setAlert] = useState({show: false, message: '', type: ''});
+    const [_alertType, setAlertType] = useState('');
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = async (e) => {
+    function handleSubmit(e) {
         e.preventDefault();
-        
-        try {
-            const response = await fetch('http://localhost:3001/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            });
 
-            if (response.ok) {
-                console.log('Email enviado com sucesso');
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: ''
-                });
-            } else {
-                console.error('Erro ao enviar o email');
-            }
-        } catch (error) {
-            console.error('Erro ao enviar o email:', error);
+        if (email === '' || name === '' || message === '') {
+            setAlert({show: true, message: 'Preencha todos os campos', type: 'error'});
+            setAlertType('danger');
+            return 'Preencha todos os campos';
         }
-    };
+
+        const templateParams = {
+            from_name: name,
+            email: email,
+            message: message,
+        };
+
+        emailjs.send('service_3ds45ev', 'template_emd95dh', templateParams, 'ztijiZqAUQ0WFVbLe')
+            .then((result) => {
+                console.log('enviado com sucesso', result.status, result.text);
+                setName('');
+                setEmail('');
+                setMessage('');
+                setAlert({show: true, message: 'Mensagem enviada com sucesso', type: 'success'});
+                setAlertType('success');
+            })
+            .catch((error) => {
+                setAlert({show: true, message: 'Erro ao enviar mensagem', type: 'error'});
+                setAlertType('danger');
+                console.log('erro ao enviar', error);
+            });
+    }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setAlert({ ...alert, show: false });
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, [alert]);
 
     return (
         <div className="main-container-contact" id='contact'>
-            <div className="full-page-section-contact">                
-                <form onSubmit={handleSubmit} className="contact-form">
+            <div className="full-page-section-contact">
+                <form className="contact-form">
                     <div className="form-group">
-                        <label htmlFor="name">Nome:</label>
+                        <label htmlFor="nome">Nome:</label>
                         <input
                             type="text"
-                            id="name"
                             name="name"
-                            value={formData.name}
-                            onChange={handleChange}
                             maxLength={50}
+                            value={name}
+                            placeholder='Digite seu nome'
+                            onChange={(e) => setName(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
                         <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
+                            type="text"
+                            name='email'
                             maxLength={40}
-                        />
+                            value={email}
+                            placeholder='Digite seu email'
+                            onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Mensagem:</label>
                         <textarea
+                            type="text"
                             id="message"
                             name="message"
-                            value={formData.message}
-                            onChange={handleChange}
+                            value={message}
+                            placeholder='Digite sua mensagem'
+                            onChange={(e) => setMessage(e.target.value)}
                             maxLength={500}
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">Enviar</button>
+                    <button type="button" className="btn btn-primary" onClick={handleSubmit}>Enviar</button>
+                     {alert.show &&
+                        <div className={`alert alert-${alert.type} position-fixed top-50 start-50 translate-middle`} style={{ zIndex: 1, color: 'white',
+                            backgroundColor: alert.type === 'success' ? 'green' : 'red'}}     
+                         role="alert">
+                            {alert.message}
+                        </div>
+                    }
                 </form>
             </div>
         </div>
