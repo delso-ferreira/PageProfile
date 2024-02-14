@@ -25,17 +25,23 @@
 }
 
 .card {    
-    width: 300px;
+    width: calc(100vh - 360px);
     margin: 60px;
     padding: 20px;
     border: 2px solid #333;
     border-radius: 8px;    
     z-index: 1;    
-    margin-top: calc(100vh / 4);
+    margin-top: 100px;
 }
 
 .card p {
     font-family: 'Georama';
+    text-align: justify;
+    
+}
+
+.card-content h3{
+    margin-top: 5px;
 }
 
 .card img {
@@ -44,18 +50,12 @@
     border-radius: 5px;
 }
 
-.card-content {
-    margin-top: 10px;
-}
-
-
 .card p {
     margin-top: 5px;
 }
 
 .card a {
     display: block;
-    margin-top: 10px;
     text-decoration: none;
     color: #007bff;
 }
