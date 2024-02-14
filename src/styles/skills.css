@@ -34,9 +34,7 @@ ul.skills-front,
 ul.skills-back,
 ul.skills-tools {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  align-self: center;  
-   
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   
 }
 
 ul.skills-front li,
@@ -123,4 +121,24 @@ ul.skills-tools li {
 [mode-theme='light'] .main-container-skills{
   background-color:honeydew;
   color: black;
+}
+
+@media screen and (max-width: 680px) {
+  .skills-quadrant-1,
+  .skills-quadrant-2,
+  .skills-quadrant-3 {
+    width: 33.33%; 
+    margin: 10px auto;    
+    flex-wrap: wrap;
+    
+    
+  }
+
+  ul.skills-front li,
+  ul.skills-back li,
+  ul.skills-tools li {
+    border: unset;
+    width: fit-content;    
+  } 
+
 }

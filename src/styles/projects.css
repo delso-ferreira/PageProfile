@@ -101,8 +101,8 @@
     transition: background-color 1s, color 1s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
     .card {
-        width: calc(50% - 40px);
+        width: calc(33.33% - 40px);
     }
 }
