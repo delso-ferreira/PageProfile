@@ -4,7 +4,7 @@
       "name": "Futebol Club",
       "description": "Aplicação web para gerenciamento de times de futebol, com a capacidade de criar, visualizar, deletar e atualizar partidas e leaderboard.",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/delso-ferreira/futebol-clube",
       "youtubeUrl": "https://youtu.be/YWy3-kbpxI0" 
     },
     {
@@ -12,16 +12,16 @@
       "name": "RPG Battle",
       "description": "Simulação de batalhas de RPG, com a capacidade de criar, visualizar, atualizar personagens e batalhas.",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/delso-ferreira/RPG_Battle_App",
       "youtubeUrl": "#" 
     },
     {
       "id": 3,
-      "name": "Product Manager",
-      "description": "Gerenciamento de vendas, com a capacidade de criar, visualizar, deletar e atualizar produtos e vendas",
+      "name": "Currency Converter",
+      "description": "Conversor de moedas, com a capacidade de visualizar, atualizar e deletar moedas e despesas.",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "https://github.com/delso-ferreira/product-manager",
-      "youtubeUrl": "#" 
+      "githubUrl": "https://github.com/delso-ferreira/currency-converter",
+      "youtubeUrl": "https://youtu.be/Bf-xKT6hK8c" 
     }
   ]
   
