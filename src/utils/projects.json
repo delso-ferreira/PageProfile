@@ -4,21 +4,24 @@
       "name": "Futebol Club",
       "description": "Aplicação web para gerenciamento de times de futebol, com a capacidade de criar, visualizar, deletar e atualizar partidas e leaderboard.",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "youtubeUrl": "https://youtu.be/YWy3-kbpxI0" 
     },
     {
       "id": 2,
       "name": "RPG Battle",
       "description": "Simulação de batalhas de RPG, com a capacidade de criar, visualizar, atualizar personagens e batalhas.",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "youtubeUrl": "#" 
     },
     {
       "id": 3,
       "name": "Product Manager",
       "description": "Gerenciamento de vendas, com a capacidade de criar, visualizar, deletar e atualizar produtos e vendas",
       "imageUrl": "https://via.placeholder.com/150",
-      "githubUrl": "https://github.com/delso-ferreira/product-manager"
+      "githubUrl": "https://github.com/delso-ferreira/product-manager",
+      "youtubeUrl": "#" 
     }
   ]
   

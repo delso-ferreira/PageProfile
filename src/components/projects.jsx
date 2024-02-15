@@ -15,6 +15,7 @@ function Projects() {
                 <p>{project.description}</p>
                 </strong>
                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                <a href={project.youtubeUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
               </div>
             </div>
           ))}

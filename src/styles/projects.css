@@ -32,7 +32,8 @@
     border-radius: 8px;
     box-sizing: border-box;  
     z-index: 1;    
-    margin-top: 90px;
+    height: 84vh;
+    margin-top: 82px;
 }
 
 .card p {
@@ -59,6 +60,7 @@
     display: block;
     text-decoration: none;
     color: #007bff;
+    margin-top: 2px;
 }
 
 .card a:hover {
