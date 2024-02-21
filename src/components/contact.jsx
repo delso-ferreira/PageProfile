@@ -49,7 +49,7 @@ function Contact() {
     }, [alert]);
 
     return (
-        <div className="main-container-contact" id='contact'>
+        <div className=" main-container main-container-contact" id='contact'>
             <div className="full-page-section-contact">
                 <form className="contact-form">
                     <div className="form-group">

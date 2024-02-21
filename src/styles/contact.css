@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
 
+.main-container {
+    width: 1000px;
+}
+
 .main-container-contact {
 display: flex;
 justify-content: center;

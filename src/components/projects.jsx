@@ -4,7 +4,7 @@ import projects from '../utils/projects.json';
 
 function Projects() { 
   return (
-    <div className="main-container-proj" id='projects'>              
+    <div className="main-container main-container-proj" id='projects'>              
         <div className="card-container">
           {projects.map(project => (
             <div className="card" key={project.id}>

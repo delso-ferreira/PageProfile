@@ -3,12 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 
 
+.main-container {
+    width: 1000px;
+    height: 100vh;
+}
+
 .main-container-about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: 100vh;    
+    justify-content: center;        
 }
 
 
@@ -91,3 +95,10 @@
 [mode-theme='dark'] .about-text {
     color: #f8f9fa;
 }
+
+@media (max-width: 490px) {
+    .about-name-container {
+       display: flex;
+       flex-direction: column;
+    }
+ }

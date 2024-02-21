@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
 
+.main-container {
+  width: 1000px;
+  height: calc(100vh + 75px);  
+}
+
 .main-container-skills {
   display: flex;
-  justify-content: center;
-  height: 115vh;
+  justify-content: center;  
   align-items: center;  
+  align-content: center;
+  padding: 40px;
 }
 
 .full-page-section-skills {
@@ -16,13 +22,12 @@
   height: 86vh;  
 }
 
-.skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {
-  width: 50vh;
-  border: 2px solid #333;
+.skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {  
+  border: transparent;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
-  max-height: 90vh;
+  max-height: 480px;
   overflow-y: auto;
   overflow: hidden;
   
@@ -40,7 +45,7 @@ ul.skills-tools {
 ul.skills-front li,
 ul.skills-back li,
 ul.skills-tools li {
-  border: 2px solid #333;
+  border: transparent;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
@@ -123,14 +128,23 @@ ul.skills-tools li {
   color: black;
 }
 
-@media screen and (max-width: 773px) {
+@media screen and (max-width: 770px) {
+
+  .full-page-section-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
   .skills-quadrant-1,
   .skills-quadrant-2,
   .skills-quadrant-3 {
     width: 33.33%; 
     margin: 10px auto;    
-    flex-wrap: wrap;
-    
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));   
     
   }
 

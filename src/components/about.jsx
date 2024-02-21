@@ -11,7 +11,7 @@ function About() {
     }, []);
 
     return (
-        <div bg={mode === "light" ? "light" : "dark"} variant={mode === "light" ? "light" : "dark"} className="main-container-about" id="about">
+        <div bg={mode === "light" ? "light" : "dark"} variant={mode === "light" ? "light" : "dark"} className= "main-container main-container-about" id="about">
             <div className="full-page-section">
                 <div className="about-intro">
                     <div className='about-name-container'>
