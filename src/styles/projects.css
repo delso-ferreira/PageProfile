@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
 
-.main-container {
-    width: 1000px;
-
-}
-
 .main-container-proj,
 .card,
 .card-container,
@@ -13,6 +8,10 @@
     color: #333;
     z-index: 1;
     background-color: honeydew;
+}
+
+.main-container-proj{
+    height: 200vh;
 }
 
 
@@ -24,8 +23,9 @@
     z-index: 1;        
 }
 
-.card {    
-    width: calc(33.33% - 40px);
+.card {
+    display: flex;    
+    width: 300px;
     margin: 20px;
     padding: 20px;
     border: transparent;
@@ -33,7 +33,28 @@
     box-sizing: border-box;  
     z-index: 1;    
     margin-top: 85px;
+    justify-content: center;    
+    align-items: center;    ;
 }
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;    
+}
+
+.card-projects-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
 
 .card p {
     font-family: 'Georama';
@@ -105,8 +126,18 @@
     transition: background-color 1s, color 1s;
 }
 
-@media screen and (max-width: 490px) {
+/* @media screen and (max-width: 780px) {
     .card {
-        width: calc(33.33% - 40px);
+        width: 80vh;                
     }
-}
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 1000px;
+        height: 100vh;
+    }
+}  */

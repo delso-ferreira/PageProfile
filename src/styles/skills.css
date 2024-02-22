@@ -1,36 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
 
-.main-container {
-  width: 1000px;
-  height: calc(100vh + 75px);  
-}
-
 .main-container-skills {
   display: flex;
   justify-content: center;  
   align-items: center;  
   align-content: center;
   padding: 40px;
+  
 }
 
-.full-page-section-skills {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1000px;
-  height: 86vh;  
-}
+
 
 .skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {  
   border: transparent;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
-  max-height: 480px;
+  height: 480px;
   overflow-y: auto;
   overflow: hidden;
-  
+  margin-top: 60px; 
+  width: 25vw;
   
   
 }
@@ -38,8 +29,10 @@
 ul.skills-front,
 ul.skills-back,
 ul.skills-tools {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  
 }
 
 ul.skills-front li,
@@ -128,13 +121,15 @@ ul.skills-tools li {
   color: black;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 640px) {
 
-  .full-page-section-skills{
-    display: flex;
-    flex-direction: column;
+
+  .full-page-section-skills{    
     align-items: center;
     justify-content: center;
+    height: 1200px;
+    display: flex;   
+    flex-direction: column;
     
   }
 
@@ -143,16 +138,69 @@ ul.skills-tools li {
   .skills-quadrant-2,
   .skills-quadrant-3 {
     width: 33.33%; 
-    margin: 10px auto;    
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));   
+    margin: 10px auto;        
+     
     
   }
+
+  .skills-front,
+  .skills-back,
+  .skills-tools {  
+    display: grid;      
+    
+  }
+
+  ul.skills-front ,
+  ul.skills-back,
+  ul.skills-tools {
+    border: unset;
+    width: fit-content;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));    
+    
+  } 
+
+}
+
+@media (max-width: 780px) {
+
+  .main-container-skills {
+    display: flex;
+    flex-direction: column;
+    margin: -1px;    
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-quadrant-1 h2, .skills-quadrant-2 h2, .skills-quadrant-3 h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  ul.skills-front,
+  ul.skills-back,
+  ul.skills-tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+}
 
   ul.skills-front li,
   ul.skills-back li,
   ul.skills-tools li {
-    border: unset;
-    width: fit-content;    
-  } 
+    font-size: 10px;
+    width: 90px;
+    
+  }
 
+ 
 }

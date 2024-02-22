@@ -11,7 +11,7 @@ function About() {
     }, []);
 
     return (
-        <div bg={mode === "light" ? "light" : "dark"} variant={mode === "light" ? "light" : "dark"} className= "main-container main-container-about" id="about">
+        <div bg={mode === "light" ? "light" : "dark"} variant={mode === "light" ? "light" : "dark"} className= "main-container-about" id="about">
             <div className="full-page-section">
                 <div className="about-intro">
                     <div className='about-name-container'>
@@ -23,7 +23,7 @@ function About() {
                         </p>
                     </div>
                     <p className="about-fs">
-                        Desenvolvedor web fullstack.
+                        Desenvolvedor web fullstack
                     </p>
                     <p className="about-text">
                         Dedicado a encontrar soluções inovadoras para problemas complexos

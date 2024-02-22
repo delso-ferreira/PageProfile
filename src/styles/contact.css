@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
 
-.main-container {
-    width: 1000px;
-}
-
 .main-container-contact {
 display: flex;
 justify-content: center;
@@ -51,9 +47,6 @@ position: relative;
 z-index: 1;
 }
 
-.full-page-section-contact h2 {
-margin: auto;
-}
 
 [mode-theme='dark'] .main-container-contact {
 background-color: lightslategray;

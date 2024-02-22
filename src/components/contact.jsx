@@ -49,8 +49,7 @@ function Contact() {
     }, [alert]);
 
     return (
-        <div className=" main-container main-container-contact" id='contact'>
-            <div className="full-page-section-contact">
+        <div className="main-container-contact" id='contact'>            
                 <form className="contact-form">
                     <div className="form-group">
                         <label htmlFor="nome">Nome:</label>
@@ -95,7 +94,7 @@ function Contact() {
                     }
                 </form>
             </div>
-        </div>
+      
     );
 }
 
