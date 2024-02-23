@@ -24,6 +24,14 @@ height: 70vh;
     background-color: #D5BDAF;
 }
 
+.btn-primary:hover {
+    background-color: #B287A3; 
+}
+
+.btn-primary:active {
+    background-color: #B287A3 !important;
+}
+
 .form-group {
 margin-bottom: 20px;
 }
@@ -51,6 +59,8 @@ button[type="submit"] {
 position: relative;
 z-index: 1;
 }
+
+
 
 
 [mode-theme='dark'] .main-container-contact {

@@ -74,7 +74,10 @@
     border: transparent;
     background-color: #D5BDAF;
     color: black
+}
 
+.about-cv button:active , .about-cv:hover button {
+    background-color: #B287A3 !important;
 }
 
 .bnt-header-download {

@@ -29,8 +29,7 @@ function Header() {
   return (
     <div className='main-container-header'>
       <Navbar border="transparent" >
-        <Container>          
-          <Navbar.Toggle />
+        <Container>                    
           <Navbar.Collapse>
             <Nav className="me-auto">
               <Nav.Link onClick={() => handleClick('about')}>Sobre</Nav.Link>
