@@ -19,6 +19,11 @@ width: 100vh;
 height: 70vh;
 }
 
+.btn-primary {
+    border: transparent;
+    background-color: #D5BDAF;
+}
+
 .form-group {
 margin-bottom: 20px;
 }
@@ -35,7 +40,7 @@ font-size: 16px;
 
 textarea {
 resize: none;
-height: 200px;
+height: 190px;
 }
 
 .form-group label,
@@ -49,11 +54,11 @@ z-index: 1;
 
 
 [mode-theme='dark'] .main-container-contact {
-background-color: lightslategray;
+background-color: #1C0118;
 }
 
 [mode-theme='dark'] .contact-form{
-background-color: grey;
+background-color: #412539;
 color: white;
 }
 
@@ -62,12 +67,16 @@ color: white;
 transition: background-color 1s, color 1s;
 }
 
+[mode-theme='dark'] .btn-primary {
+background-color:#B287A3;
+}
+
 [mode-theme='light'] .main-container-contact {
-background-color: honeydew;
+background-color: #EDEDE9;
 }
 
 [mode-theme='light'] .contact-form{
-background-color: #f8f9fa;
+background-color: #E3D5CA;
 color: #333;
 }
 
@@ -77,3 +86,13 @@ transition: background-color 1s, color 1s;
 }
 
 
+@media (max-width: 780px) {
+
+    .main-container-contact {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: flex;        
+    }
+}

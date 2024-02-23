@@ -2,13 +2,12 @@
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
+  left: 0;  
   z-index: 2;
 }
 
 .navbar {
-  padding: 20px 0;
-  background-color: #f8f9fa;
+  padding: 20px 0;  
   transition: background-color 1s, color 1s;
 }
 
@@ -69,21 +68,20 @@
 .btn-header-email:active {
   background-color: transparent !important;
 }
-
-
-  
-body[mode-theme='dark'] .navbar {
-  background-color: #333;
-  color: white;
-}
+ 
 
 body[mode-theme='dark'] .navbar .nav-link,
 body[mode-theme='dark'] .navbar .btn {
-  color: #f8f9fa;
+  color: #f8f9fa;    
+}
+
+body[mode-theme='dark'] .navbar {   
+  background-color: #01130e;
+  
 }
 
 body[mode-theme='light'] .navbar {
-  background-color: #f8f9fa;
+  background-color: #E3D5CA;
   color: #333;
 }
 
@@ -92,3 +90,11 @@ body[mode-theme='light'] .navbar .btn {
   color: #333;
 }
 
+@media (max-width: 780px) {
+  .btn-header-contact {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  
+}

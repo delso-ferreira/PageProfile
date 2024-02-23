@@ -3,15 +3,13 @@
 
 .main-container-proj,
 .card,
-.card-container,
 .full-page-section-proj {    
     color: #333;
-    z-index: 1;
-    background-color: honeydew;
+    z-index: 1;    
 }
 
 .main-container-proj{
-    height: 200vh;
+    height: 160vh;
 }
 
 
@@ -55,14 +53,22 @@
 
 }
 
+.card-info {
+    background-color: #EDEDE9;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
 
-.card p {
-    font-family: 'Georama';
+}
+
+.card p {    
     text-align: justify;
     max-height: 105px;
     margin-top: 5px;
     max-width: 250px;
-    
+            
 }
 
 .card-content h3{
@@ -81,7 +87,7 @@
 .card a {
     display: block;
     text-decoration: none;
-    color: #007bff;
+    color: #333;
     margin-top: 2px;
     max-height: 20px;
 }
@@ -94,19 +100,30 @@
 [mode-theme='dark'] .card,
 [mode-theme='dark'] .card-container,
 [mode-theme='dark'] .full-page-section-proj {
-    background-color: lightslategray;
+    background-color: #1C0118;
     color: black;
     transition: background-color 1s, color 1s;
 }
 
 [mode-theme='dark'] .card {
     transition: background-color 1s, color 1s;
-    background-color: grey;
+    background-color: #412539;
     color: white;    
 }
 
 [mode-theme='dark'] .card a {
-    color: #66c2ff;
+    color: white;    
+}
+
+[mode-theme='dark'] .card-info {
+    background-color: #01130e;
+    color: white;
+}
+
+[mode-theme='dark'] .card-info,
+[mode-theme='light'] .card-info
+{
+    transition: background-color 1s, color 1s;
 }
 
 [mode-theme='dark'] .card a:hover {
@@ -116,19 +133,19 @@
 [mode-theme='light'] .main-container-proj,
 [mode-theme='light'] .card-container,
 [mode-theme='light'] .full-page-section-proj {
-    background-color: honeydew;
-    color: #333;
+    background-color: #EDEDE9;
+    color: black;
     transition: background-color 1s, color 1s;
 }
 
 [mode-theme='light'] .card {
-    background-color: #f8f9fa;
+    background-color: #E3D5CA;
     transition: background-color 1s, color 1s;
 }
 
-/* @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
     .card {
-        width: 80vh;                
+        width: 80vw;                
     }
 
     .card-container {
@@ -136,8 +153,8 @@
         flex-direction: column;
     }
 
-    .main-container {
-        width: 1000px;
-        height: 100vh;
+    .main-container-proj {
+        
+        height: 200vh;
     }
-}  */
+} 

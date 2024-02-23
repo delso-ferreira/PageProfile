@@ -45,7 +45,7 @@ ul.skills-tools li {
   list-style: none; 
   margin-right: 20px; 
   margin-top: 5px;
-  background-color: powderblue;
+  background-color: #EDEDE9;
   font-size: 12px;
 }
 
@@ -80,44 +80,44 @@ ul.skills-tools li {
 }
 
 [mode-theme='dark'] .skills-quadrant-1 {
-  background-color: grey;
+  background-color: #412539;
   color: white;
 }
 
 [mode-theme='dark'] ul.skills-front li {
-  background-color: darkblue;
+  background-color: #01130e;
 }
 
 [mode-theme='dark'] ul.skills-back li {
-  background-color: darkblue;
+  background-color: #01130e;
 }
 
 [mode-theme='dark'] ul.skills-tools li {
-  background-color: darkblue;
+  background-color: #01130e;
 }
 
 [mode-theme='dark'] .skills-quadrant-2 {
-  background-color: grey;
+  background-color: #412539;
   color: white;
 }
 
 [mode-theme='dark'] .skills-quadrant-3 {
-  background-color: grey;
+  background-color: #412539;
   color: white;
 }
 
 [mode-theme='light'] .skills-quadrant-1, .skills-quadrant-2, .skills-quadrant-3 {
-  background-color: #f8f9fa;
+  background-color: #E3D5CA;
   color: #333;
 } 
 
 [mode-theme='dark'] .main-container-skills {
-  background-color:lightslategray;
+  background-color:#1C0118;
   color: black;
 }
 
 [mode-theme='light'] .main-container-skills{
-  background-color:honeydew;
+  background-color:#EDEDE9;
   color: black;
 }
 
@@ -171,6 +171,7 @@ ul.skills-tools li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 140vh;
   }
 
   .skills-quadrant-1 h2, .skills-quadrant-2 h2, .skills-quadrant-3 h2 {

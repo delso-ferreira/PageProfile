@@ -52,9 +52,10 @@ function Contact() {
         <div className="main-container-contact" id='contact'>            
                 <form className="contact-form">
                     <div className="form-group">
-                        <label htmlFor="nome">Nome:</label>
+                        <label htmlFor="name">Nome:</label>
                         <input
                             type="text"
+                            id='name'
                             name="name"
                             maxLength={50}
                             value={name}
@@ -66,6 +67,7 @@ function Contact() {
                         <label htmlFor="email">Email:</label>
                         <input
                             type="text"
+                            id='email'
                             name='email'
                             maxLength={40}
                             value={email}
