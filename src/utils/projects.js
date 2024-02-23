@@ -18,7 +18,6 @@ const projects = [
       "description": "Simulação de batalhas de RPG, com a capacidade de criar, visualizar, atualizar personagens e batalhas.",
       "imageUrl": warrior,
       "githubUrl": "https://github.com/delso-ferreira/RPG_Battle_App",
-      "youtubeUrl": "#" 
     },
     {
       "id": 3,
