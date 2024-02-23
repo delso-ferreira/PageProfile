@@ -76,11 +76,11 @@ ul.skills-tools li {
 [mode-theme='dark'] ul.skills-front li, ul.skills-back li, ul.skills-tools li,
 [mode-theme='light'] ul.skills-front li, ul.skills-back li, ul.skills-tools li
 {
-  transition: background-color 1s, color 0.4s;
+  transition: background-color 1s, color 1s;
 }
 
 [mode-theme='dark'] .skills-quadrant-1 {
-  background-color: #412539;
+  background-color: #412539;  
   color: white;
 }
 

@@ -23,10 +23,14 @@
   transition: color 1s;
 }
 
-.navbar .nav-link:hover {
-  background-color: #007bff;
-  border-radius: 8px;
-  color: white;
+.nav-link:hover {  
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.nav-link:focus {
+  background-color: gray;
+  border-radius: 10px;
 }
 
 .btn-header-toogle,
@@ -37,36 +41,35 @@
   border: none;
 }
 
+.btn-header-toogle:enabled{
+  background-color: transparent !important;
+}
+
 .btn-header-github:hover {
-  background-color: transparent;
+  background-color: gray;
 }
 
 .btn-header-toogle:hover {
-  background-color: transparent;
+  background-color: gray
 }
 
 .btn-header-lnk:hover {
-  background-color: transparent;
+  background-color: gray
 }
 
 .btn-header-email:hover {
-  background-color: transparent;
+  background-color: gray
 }
 
 .btn-header-contact {
   margin-right: 100px;
 }
 
-.navbar .me-auto .nav-link:hover,
-.navbar .me-auto .btn:hover {
-  background-color: transparent !important;
-}
-
 .btn-header-toogle:active,
 .btn-header-lnk:active,
 .btn-header-github:active,
 .btn-header-email:active {
-  background-color: transparent !important;
+  background-color: gray;
 }
  
 
@@ -89,6 +92,7 @@ body[mode-theme='light'] .navbar .nav-link,
 body[mode-theme='light'] .navbar .btn {
   color: #333;
 }
+
 
 @media (max-width: 780px) {
   .btn-header-contact {
