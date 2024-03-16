@@ -29,7 +29,7 @@ function About() {
                         Dedicado a encontrar soluções inovadoras para problemas complexos
                     </p>
                     <div className="about-cv">
-                        <a href="https://drive.google.com/file/d/1KhqvTws-ANfMz5b1K9S4M6Klt3sWqItF/view?usp=drive_link" download='ResumeOfficial.pdf' target="blank">
+                        <a href="https://drive.google.com/file/d/1A62dXx_uOfgLFtzyOu9rgrk50svRvnNf/view?usp=drive_link" download='ResumeOfficial.pdf' target="blank">
                             <Button className='bnt-header-download'>
                                 Download CV
                             </Button>
@@ -37,6 +37,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 }
