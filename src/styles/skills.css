@@ -121,7 +121,7 @@ ul.skills-tools li {
   color: black;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 440px) {
 
 
   .main-container-skills{    

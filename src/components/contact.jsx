@@ -86,14 +86,7 @@ function Contact() {
                             maxLength={500}
                         />
                     </div>
-                    <button type="button" className="btn btn-primary" onClick={handleSubmit}>Enviar</button>
-                     {alert.show &&
-                        <div className={`alert alert-${alert.type} position-fixed top-50 start-50 translate-middle`} style={{ zIndex: 1, color: 'white',
-                            backgroundColor: alert.type === 'success' ? 'green' : 'red'}}     
-                         role="alert">
-                            {alert.message}
-                        </div>
-                    }
+                    <button type="button" className="btn btn-primary" onClick={handleSubmit}>Enviar</button>                   
                 </form>
             </div>
       

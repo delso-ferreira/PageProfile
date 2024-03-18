@@ -78,9 +78,10 @@
 }
 
 .card img {
-    width: 100%;
+    width: 40%;
     height: auto;
     border-radius: 5px;
+
 }
 
 
@@ -143,9 +144,10 @@
     transition: background-color 1s, color 1s;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 763px) {
     .card {
-        width: 80vw;                
+        width: 80vw;   
+        height: 50vh;             
     }
 
     .card-container {
@@ -157,4 +159,22 @@
         
         height: 200vh;
     }
+
+    .card-projects-links {        
+        justify-content: space-around;
+        margin-top: 2px;
+    }
+
+    .card-info {
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .card img {
+        width: 15vw;
+        height: auto;
+        border-radius: 5px;
+    }
+    
 } 

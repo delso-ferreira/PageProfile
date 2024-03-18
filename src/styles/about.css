@@ -140,7 +140,7 @@
 
 }
 
-@media (max-width: 493px) {
+@media (max-width: 766px) {
     
     .about-name-start {
         font-size: 40px;         
@@ -158,6 +158,10 @@
         font-size: 15px;
         margin-left: 5px;
         margin-right: 5px;         
+    }
+
+    .about-intro {
+        margin-top: 60px;
     }
 
 }

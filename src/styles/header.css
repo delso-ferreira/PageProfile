@@ -108,11 +108,31 @@ body[mode-theme='light'] .navbar .btn {
 }
 
 
-@media (max-width: 780px) {
+@media screen and (max-width: 528px) {
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar .nav-link,
+  .navbar .btn {
+    font-size: 1rem;
+  }
   .btn-header-contact {
-    display: flex;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
+}
+
+
+@media screen and (max-width: 401px) {
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar .nav-link,
+  .navbar .btn {
+    font-size: 0.8rem;
+  }
+  .btn-header-contact {
+    margin-right: 20px;
+  }
   
 }

@@ -16,7 +16,7 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 width: 100vh;
-height: 70vh;
+height: 80vh;
 }
 
 .btn-primary {
@@ -96,13 +96,18 @@ transition: background-color 1s, color 1s;
 }
 
 
-@media (max-width: 780px) {
-
+@media screen and (max-width: 445px) {
+/* 
     .main-container-contact {
-        height: 120vh;
-    }
+        height: 100vh;
+    } */
 
-    .navbar {
+   /*  .navbar {
         display: flex;        
-    }
+    } */
+
+   /*  .contact-form {
+        width: 37vh;
+        height: 50vh;
+    } */
 }
