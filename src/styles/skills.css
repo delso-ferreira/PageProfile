@@ -121,7 +121,7 @@ ul.skills-tools li {
   color: black;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 481px) {
 
 
   .main-container-skills{    
@@ -205,3 +205,25 @@ ul.skills-tools li {
 
  
 }
+
+@media screen and (max-width: 371px)
+{
+  .skills-quadrant-1 h2, .skills-quadrant-2 h2, .skills-quadrant-3 h2 {
+    font-size: 1.2rem;
+  }
+
+  ul.skills-front li,
+  ul.skills-back li,
+  ul.skills-tools li {
+    font-size: 8px;
+    width: 70px;
+  }
+
+  ul.skills-front, ul.skills-back, ul.skills-tools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+ }  
+}
+
+  

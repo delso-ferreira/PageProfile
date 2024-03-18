@@ -8,7 +8,7 @@ function Projects() {
         <div className="card-container">
           {projects.map(project => (
             <div className=" card" key={project.id}>
-              <img src={project.imageUrl} alt={project.name}/>
+              {/* <img src={project.imageUrl} alt={project.name}/> */}
               <div className="card-content">
                 <div className='card-info'>
                 <h3>{project.name}</h3>                
